@@ -5,21 +5,21 @@
 class Evy < Formula
   desc "Evy is a simple programming language."
   homepage "https://evy.dev"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/evylang/evy/releases/download/v0.1.3/evy_0.1.3_darwin_arm64.tar.gz"
-      sha256 "2d4db03fc802d706e41d976cee7a19440efd581725e886d40d38674b71911971"
+      url "https://github.com/evylang/evy/releases/download/v0.1.4/evy_0.1.4_darwin_arm64.tar.gz"
+      sha256 "5a008e83ee519c22888d983fbfb400fc785d60bbe959806f76dea5c00e2de121"
 
       def install
         bin.install "evy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/evylang/evy/releases/download/v0.1.3/evy_0.1.3_darwin_amd64.tar.gz"
-      sha256 "ef8dc5eaf0dc2d3a2070b922a991a2bab1c128bb2804cf35e57e31ba5fce3c9f"
+      url "https://github.com/evylang/evy/releases/download/v0.1.4/evy_0.1.4_darwin_amd64.tar.gz"
+      sha256 "fbff03edb402bf4e4140e389cd76dcd0a9a158b4ea92a87da93cbd45b7d11ed0"
 
       def install
         bin.install "evy"
@@ -29,16 +29,16 @@ class Evy < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/evylang/evy/releases/download/v0.1.3/evy_0.1.3_linux_amd64.tar.gz"
-      sha256 "1e1fb60d8b1cad708ac3c28178d7e40fcfcdbc258cf263867ab8d4157a4dc78f"
+      url "https://github.com/evylang/evy/releases/download/v0.1.4/evy_0.1.4_linux_amd64.tar.gz"
+      sha256 "d0354af9d5e547db7785fcd46ce5df119b5cac256091f1cea94af74155426b48"
 
       def install
         bin.install "evy"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/evylang/evy/releases/download/v0.1.3/evy_0.1.3_linux_arm64.tar.gz"
-      sha256 "ca6bc3430eac5d74069d8b5120813e77251c9aac9712cd39a1d400893ebd8fcf"
+      url "https://github.com/evylang/evy/releases/download/v0.1.4/evy_0.1.4_linux_arm64.tar.gz"
+      sha256 "3267804b4d3ba7ee88513cb792b28c5926189b02d8bdd54f10f4bc7e607a409c"
 
       def install
         bin.install "evy"
