@@ -5,21 +5,21 @@
 class Evy < Formula
   desc "Evy is a simple programming language."
   homepage "https://evy.dev"
-  version "0.1.73"
+  version "0.1.74"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/evylang/evy/releases/download/v0.1.73/evy_0.1.73_darwin_arm64.tar.gz"
-      sha256 "e47d99a0bfea881ada3a2829b7c9bcaa68408a13147d4fcc4b9c28e97aecf3f2"
+      url "https://github.com/evylang/evy/releases/download/v0.1.74/evy_0.1.74_darwin_arm64.tar.gz"
+      sha256 "dbe173dff84f79f4e603b50be797f7a395b1dd0a337149910ce7e4a237ee609b"
 
       def install
         bin.install "evy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/evylang/evy/releases/download/v0.1.73/evy_0.1.73_darwin_amd64.tar.gz"
-      sha256 "9396b2ee51fbfa12481971b9fc0d4eded630920ff504a565017d303161c1796d"
+      url "https://github.com/evylang/evy/releases/download/v0.1.74/evy_0.1.74_darwin_amd64.tar.gz"
+      sha256 "86b2dccf225fe19dd86b42602dd201603e23c05037ad16a4ec22ce6962eabab9"
 
       def install
         bin.install "evy"
@@ -29,16 +29,16 @@ class Evy < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/evylang/evy/releases/download/v0.1.73/evy_0.1.73_linux_arm64.tar.gz"
-      sha256 "b4146bb06d765c7c54973a3e90ef994c89a0a7c015196b41abda109515af66fd"
+      url "https://github.com/evylang/evy/releases/download/v0.1.74/evy_0.1.74_linux_arm64.tar.gz"
+      sha256 "d977375d9eef17dfba2e73a0fb449e58d81003e35757c0356635c9c9172e5acc"
 
       def install
         bin.install "evy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/evylang/evy/releases/download/v0.1.73/evy_0.1.73_linux_amd64.tar.gz"
-      sha256 "945e32559369da7074cc75f25a633ca1dde43051d4be95b945dc00cee7c28083"
+      url "https://github.com/evylang/evy/releases/download/v0.1.74/evy_0.1.74_linux_amd64.tar.gz"
+      sha256 "000c42656429b5a7d3cb76a0282588ded7884cfc3762d736851a9340eef27a41"
 
       def install
         bin.install "evy"
