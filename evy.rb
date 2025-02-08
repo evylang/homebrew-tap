@@ -5,21 +5,21 @@
 class Evy < Formula
   desc "Evy is a simple programming language."
   homepage "https://evy.dev"
-  version "0.1.209"
+  version "0.1.210"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/evylang/evy/releases/download/v0.1.209/evy_0.1.209_darwin_amd64.tar.gz"
-      sha256 "adaf312f9d9d2bbe1b3a1decfe50a0b5b53a15470dc021f30390a2e32dd9e883"
+      url "https://github.com/evylang/evy/releases/download/v0.1.210/evy_0.1.210_darwin_amd64.tar.gz"
+      sha256 "5bc38ea13f8625bb6dd5afbcbd44fad6ebfc9fcc78bd37814052a19db8fb8b49"
 
       def install
         bin.install "evy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/evylang/evy/releases/download/v0.1.209/evy_0.1.209_darwin_arm64.tar.gz"
-      sha256 "ee00a26daf156ca7be584380db68c4459e280a131067bf0fa54a65da7af1e85b"
+      url "https://github.com/evylang/evy/releases/download/v0.1.210/evy_0.1.210_darwin_arm64.tar.gz"
+      sha256 "73b68c925b5f035ffe5a07a18f41aef7fd3447695ccc66de50e099afd86e7588"
 
       def install
         bin.install "evy"
@@ -30,8 +30,8 @@ class Evy < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/evylang/evy/releases/download/v0.1.209/evy_0.1.209_linux_amd64.tar.gz"
-        sha256 "eac7f7c2c27b59769a6d8c5cf71c4bab532519fa7fa599698fed34a29a7ece53"
+        url "https://github.com/evylang/evy/releases/download/v0.1.210/evy_0.1.210_linux_amd64.tar.gz"
+        sha256 "8c0a53df37dc381dce9eca084cb1a2e1896a8fe6ea133dc75fcc0437e2f2f47c"
 
         def install
           bin.install "evy"
@@ -40,8 +40,8 @@ class Evy < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/evylang/evy/releases/download/v0.1.209/evy_0.1.209_linux_arm64.tar.gz"
-        sha256 "6007a4952d83671e0f45da5fce71aacc8793932bc3262e92bf8ae1a0d401c8e9"
+        url "https://github.com/evylang/evy/releases/download/v0.1.210/evy_0.1.210_linux_arm64.tar.gz"
+        sha256 "6fdd45f5e9aecabec2a59156a1947f398d786871f2238cb858321b4054bdc49b"
 
         def install
           bin.install "evy"
